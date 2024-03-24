@@ -17,7 +17,7 @@ function AppliedJobCart({ data }) {
   } = data;
   return (
     <>
-      <div className="p-7 border border-gray-400 flex justify-between items-center">
+      <div className="p-7 border border-gray-400 flex justify-between items-center rounded-xl">
         <div className="flex items-center gap-10">
           <div>
             <img className="w-40" src={logo} alt="" />

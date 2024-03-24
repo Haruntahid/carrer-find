@@ -1,11 +1,25 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { saveDataToLs } from "../utils/utils";
+// import { useEffect, useState } from "react";
 
 function Jobdetails() {
-  const data = useLoaderData();
+  const datas = useLoaderData();
+
+  // const [jobData, setJobData] = useState([]);
   const param = useParams();
 
-  const currentData = data.find((dt) => dt.id === parseInt(param.id));
+  // useEffect(() => {
+  //   fetch("../../public/jobs.json")
+  //     .then((res) => res.json())
+  //     .then((data) => setJobData(data));
+  // }, []);
+
+  // const currentData = jobData.find((dt) => console.log(dt));
+  // console.log(currentData);
+
+  // console.log(datas);
+
+  const currentData = datas.find((dt) => dt.id === parseInt(param.id));
 
   // console.log(currentData);
 
